@@ -14,6 +14,7 @@ Use this super simple utility to be more productive with the [pomodoro technique
       pomodoro --minutes 5
       pomodoro -s 10 
       pomodoro --seconds 10 
+      pomodoro -m 1 -s 30
     
 ###Options
 
