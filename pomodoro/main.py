@@ -4,7 +4,6 @@
 import click
 import progressbar
 import time
-from playsound import playsound
 
 @click.command()
 @click.option('--minutes', '-m',  default=25, help='Number of minutes, default 25.')
@@ -18,7 +17,6 @@ def main(minutes, seconds):
         time.sleep(1)
         
     print("Take a 5 minutes break")
-    playsound('ding.mp3')
 
 if __name__ == '__main__':
     main()
