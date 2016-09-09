@@ -18,7 +18,7 @@ def main(minutes, seconds):
             minutes = 25 
         else:
             minutes = 0
-    else
+    else:
         minutes = int(minutes)
     
     seconds = 0 if seconds is None else int(seconds)
