@@ -1,5 +1,7 @@
 # Pomodoro
 
+Use this super simple utility to be more productive with the [pomodoro technique](https://en.wikipedia.org/wiki/Pomodoro_Technique)
+
 ##Install
 
   pip install git+https://github.com/raiderrobert/pomodoro/ --upgrade
