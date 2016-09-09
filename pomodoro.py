@@ -7,8 +7,8 @@ import time
 @click.option('--minutes', default=25, help='Number of minutes, default 25.')
 def pomodoro(minutes):
     bar = progressbar.ProgressBar(widgets=[
-    progressbar.Bar(),
-])
+        progressbar.Bar(),
+    ])
     for i in bar(range(minutes*60)):
         time.sleep(1)
 
