@@ -5,7 +5,6 @@ import click
 import progressbar
 import time
 from playsound import playsound
->>> 
 
 @click.command()
 @click.option('--minutes', '-m',  default=25, help='Number of minutes, default 25.')
