@@ -17,7 +17,11 @@ def main(minutes, seconds):
         if seconds is None:
             minutes = 25 
         else:
-            seconds = int(seconds)
+            minutes = 0
+    else
+        minutes = int(minutes)
+    
+    seconds = 0 if seconds is None else int(seconds)
             
     for i in bar(range(minutes*60+seconds)):
         time.sleep(1)
