@@ -1,3 +1,4 @@
+import os
 from setuptools import find_packages, setup
 
 VERSION = __import__('pomodoro').__version__
