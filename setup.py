@@ -14,7 +14,7 @@ def read_file(filename):
     except IOError:
         return ''
 
-install_requires = ['click', 'progressbar2']
+install_requires = ['click', 'progressbar2', 'playsound']
 
 setup(
     name=NAME,
