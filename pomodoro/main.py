@@ -12,7 +12,7 @@ def main(minutes, seconds):
     bar = progressbar.ProgressBar(widgets=[
         progressbar.Bar(),
     ])
-    seconds = 0 if seconds is None else seconds
+    seconds = 0 if seconds is None else int(seconds)
     for i in bar(range(minutes*60+seconds)):
         time.sleep(1)
 
