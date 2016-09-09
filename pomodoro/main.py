@@ -6,13 +6,19 @@ import progressbar
 import time
 
 @click.command()
-@click.option('--minutes', '-m',  default=25, help='Number of minutes, default 25.')
+@click.option('--minutes', '-m', help='Number of minutes, default 25.')
 @click.option('--seconds', '-s', help='Number of seconds.')
 def main(minutes, seconds):
     bar = progressbar.ProgressBar(widgets=[
         progressbar.Bar(),
     ])
-    seconds = 0 if seconds is None else int(seconds)
+    
+    if minutes is None:
+        if seconds is None:
+            minutes = 25 
+        else:
+            seconds = int(seconds)
+            
     for i in bar(range(minutes*60+seconds)):
         time.sleep(1)
         
