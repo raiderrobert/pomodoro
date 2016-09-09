@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-VERSION = __import__('herald').__version__
+VERSION = __import__('pomodoro').__version__
 NAME = 'pomodoro'
 URL = 'https://github.com/raiderrobert/pomodoro/'
 
