@@ -32,7 +32,7 @@ setup(
     keywords=['pomodoro', 'time management', 'productivity'],
     entry_points={
         'console_scripts': [
-            'pomodoro = pomodoro:main'
+            'pomodoro = pomodoro.main:main'
         ]
     },
     classifiers=[
