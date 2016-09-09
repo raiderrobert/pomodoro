@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 import click
 import progressbar
@@ -6,7 +7,7 @@ import time
 
 @click.command()
 @click.option('--minutes', default=25, help='Number of minutes, default 25.')
-def pomodoro(minutes):
+def main(minutes):
     bar = progressbar.ProgressBar(widgets=[
         progressbar.Bar(),
     ])
@@ -14,4 +15,4 @@ def pomodoro(minutes):
         time.sleep(1)
 
 if __name__ == '__main__':
-    pomodoro()
+    main()
