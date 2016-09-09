@@ -34,7 +34,6 @@ setup(
             'pomodoro = pomodoro:main'
         ]
     },
-    license='MIT',
     classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Console',
