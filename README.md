@@ -9,12 +9,10 @@ Use this super simple utility to be more productive with the [pomodoro technique
   
 ##Usage
 
-      pomodoro
-      pomodoro -m 5 
-      pomodoro --minutes 5
-      pomodoro -s 10 
-      pomodoro --seconds 10 
-      pomodoro -m 1 -s 30
+      pomodoro                  # normal 25 minutes
+      pomodoro -m 5             # 5 minutes
+      pomodoro -s 30            # 30 seconds
+      pomodoro -m 10 -s 30      # 10 minutes and 30 seconds
     
 ###Options
 
