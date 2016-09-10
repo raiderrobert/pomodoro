@@ -4,7 +4,7 @@ Use this super simple utility to be more productive with the [pomodoro technique
 
 ##Install
 
-      pip install git+https://github.com/raiderrobert/pomodoro/ --upgrade
+      pip install git+https://github.com/raiderrobert/pomodoro/
     
   
 ##Usage
