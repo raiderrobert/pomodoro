@@ -31,7 +31,7 @@ def main(minutes, seconds, log):
 
     if log is not None:
         log_file = open(log, 'a')
-        log_file.write(time.strftime('%m.%d.%Y') + "," + str(minutes) + "," + str(seconds))
+        log_file.write(time.strftime('%m.%d.%Y') + "," + str(minutes) + "," + str(seconds) + "\n")
         log_file.close()
 
 if __name__ == '__main__':
