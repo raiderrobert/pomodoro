@@ -8,7 +8,8 @@ import time
 @click.command()
 @click.option('--minutes', '-m', help='Number of minutes, default 25.')
 @click.option('--seconds', '-s', help='Number of seconds.')
-def main(minutes, seconds):
+@click.option('--log', '-l', help='The file to which log information shall be appended.')
+def main(minutes, seconds, log):
     bar = progressbar.ProgressBar(widgets=[
         progressbar.Bar(),
     ])
@@ -22,11 +23,16 @@ def main(minutes, seconds):
         minutes = int(minutes)
     
     seconds = 0 if seconds is None else int(seconds)
-            
+
     for i in bar(range(minutes*60+seconds)):
         time.sleep(1)
         
     print("Take a 5 minutes break")
+
+    if log is not None:
+        log_file = open(log, 'a')
+        log_file.write(time.strftime('%m.%d.%Y') + "," + str(minutes) + "," + str(seconds))
+        log_file.close()
 
 if __name__ == '__main__':
     main()
