@@ -19,3 +19,4 @@ Use this super simple utility to be more productive with the [pomodoro technique
       -h --help        Show this screen.
       -m --minutes     Time in minutes [default: 25].
       -s --seconds     Time in seconds.
+      -l, --log        The file to which log information shall be appended.
